@@ -1,0 +1,149 @@
+		/***************Menu*****************/
+	@font-face{
+		font-family:fuente1;
+		src: url();
+	}
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'fuente1';
+	}
+	body{
+		background-color: black;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+}
+	.transparencia{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: rgba(0,0,0,0.5);
+		z-index: -1;
+		top: 0;left: 0;
+	}
+	.cabecera{
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		top: 0;left: 0;
+	}
+	.contenedor{
+		width: 90%;
+		max-width: 1200px;
+		margin: auto;
+	}
+	.contenedor .boton, .titulo{
+		float: left;
+		line-height:100px;
+	}
+	.contenedor .boton label{
+		color: white;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	.titulo h1{
+		color: white;
+		font-weight: 400;
+		font-size: 22px;
+		margin-left: 10px;
+		font-size: 40px;
+	}
+	.contenedor .menu{
+		float: right;
+		line-height: 100px;
+	}
+	.contenedor .menu a{
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: white;
+		transition: all 0.3s;
+		border-bottom: 2px solid transparent;
+		font-size: 20px;
+		margin-right: 5px;
+	}
+	.contenedor .menu a:hover{
+		border-bottom: 2px solid white;
+		padding-bottom: 5px;
+		background: whitesmoke;
+		color: black;
+	}
+	
+
+	/******************Menù lateral*******************/
+	#boton-menu{
+		display: none;
+	}
+	.container-menu{
+		position: absolute;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100vh;
+		top: 0;left: 0;
+		transition: all 0.5s;
+		opacity: 0;
+		visibility: hidden;
+	}
+	#boton-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+		width: 100%;
+		max-width: 250px;
+		background: #1c1c1c;
+		height: 100vh;
+		position: relative;
+		transition: all 0.5s;
+		transform: translateX(-100%);
+	}
+	#boton-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: white;
+		transition: all 400ms ease;
+	}
+	.cont-menu nav a:hover{
+		border-left: 5px solid white;
+		background: whitesmoke;
+		color: black;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: white;
+		cursor: pointer;
+		font-size: 18px;
+	}
+
+	/***************Menu lateral*****************/
+
+	/***************FOTOS*****************/
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+img{
+	width: 100%;
+}
+
+
+
+
+
+	/***************FOTOS*****************/
