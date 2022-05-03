@@ -14,6 +14,12 @@
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
 }
+
+.logo{
+	margin-top: 10px;
+	height: 150px;
+	width: 100px;
+}
 	.transparencia{
 		position: fixed;
 		width: 100%;
@@ -67,7 +73,7 @@
 	.contenedor .menu a:hover{
 		border-bottom: 2px solid white;
 		padding-bottom: 5px;
-		background: whitesmoke;
+		background: #D98520;
 		color: black;
 	}
 	
@@ -114,7 +120,7 @@
 	}
 	.cont-menu nav a:hover{
 		border-left: 5px solid white;
-		background: whitesmoke;
+		background: #D98520;
 		color: black;
 	}
 	.cont-menu label{
@@ -128,22 +134,321 @@
 
 	/***************Menu lateral*****************/
 
-	/***************FOTOS*****************/
-*{
-	box-sizing: border-box;
+	/***************GALERIA*****************/
+
+.fotos{
+	height: 150px;
+	width: 240px;
+	position: relative;
+	float: left;
+	margin: 10px;
+	border-radius: 10px;
+	transition: 0.75s;
 }
 
-body{
-	margin: 0px;
-	padding: 0px;
-}
-
-img{
-	width: 100%;
+.fotos:hover{
+	transform: translateY(20px);
+	transition: 0.75s;
 }
 
 
+iframe{
+	height: 401px;
+	width: 680px;
+	border-radius: 10px;
+	transition: 0.75s;
+}
+
+iframe:hover{
+	transform: translateY(-20px);
+	transition: 0.75s;
+}
+
+.alineadoimagenes{
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.alineado{
+
+	display: flex;
+	justify-content: center;
+}
+
+	/***************GALERIA*****************/
+
+	/***************FORMULARIO*****************/
+
+.contenidoform {
+    background: tr;
+    color: #fff;
+    line-height: 1.6;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 1.5em;
+	transition: all 0.50s;
+}
+
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+.contenidoform:hover{
+	transform: translateY(-15px);
+	box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.2);
+	transition: all 0.50s;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.logo2 {
+    text-align: center;
+    font-size: 3em;
+}
+
+.logo2 span {
+    color: #D98520;
+}
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+.contact-form {
+    background: #222222;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+    display: block;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #D98520;
+}
+
+.contact-form form button {
+    background: #D98520;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #D98520;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.contact-info {
+    background: #000;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+@media(min-width: 700px) {
+    body {
+        padding: 0 4em;
+    }
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+    }
+}
+
+
+	/***************FORMULARIO*****************/
+
+	/***************TARJETAS*****************/
+
+.contenedorcard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    background: #f3f1f5;
+    background-color: transparent;
+}
+
+.card {
+    margin: 20px;
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+    overflow: hidden;
+
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .4);
+    opacity: 0;
+    transition: .5s;
+}
+
+.content h2, a {
+    color: rgba(255, 255, 255, .8);
+    margin: 10px 0;
+}
+
+.card:hover .content {
+    opacity: 1;
+}
+	/***************TARJETAS*****************/
+
+/****************PIE DE PAGINA****************/
+
+.center-align{
+	margin: 0 auto;
+	width: 1100px;
+}
+
+.black{color: black;
+}
+.yellow{color: #D98520;
+}
+
+
+.section-columns > div{
+	display: inline-block;
+	vertical-align: top;
+	width: 49%;
+}
+
+.section-columns h2{
+	font-size: 70px;
+	font-family: fuente1;
+}
 
 
 
-	/***************FOTOS*****************/
+.section-columns h3{
+	font-size: 26px;
+	font-weight: lighter;
+	line-height: 40px;
+
+}
+.section-columns p{
+	font-weight: lighter;
+	font-size: 16px;
+	line-height: 30px;
+	padding-bottom: 10px;
+}
+
+.section-columns #bio{
+	height: 600px;
+}
+
+
+#footer{
+	margin-top: -50px;
+	padding-top: 50px;
+	height: 850px;
+}
+
+#footer h3{
+	color: #D98520; 
+	padding-top: 70px; 
+	margin: 0;
+	font-size: 30px;
+	font-family: fuente1;
+}
+
+#footer p {
+	color: whitesmoke;
+ 	padding-bottom: 30px;
+ 	font-size: 20px;
+}
+
+
+.bg-black{
+	background-color: #222222;
+}
+
+.btn{
+	border: solid 1px;
+	padding: 20px 40px;
+	text-decoration: none;
+	margin-right: 10px;
+}
+.btn-black{
+	border-color: black;
+	color: black;
+	
+}
+.btn-black:hover{
+	background-color: black;
+	border-color: white;
+	color: white;
+	transition: all 0.50s;
+}
+.btn-yellow{
+	border-color: white;
+	color: white;
+	transition: all 0.50s;
+}
+
+.btn-yellow:hover{
+	background-color: #D98520;
+	border-color: white;
+	color: black;
+	transition: all 0.50s;
+}
+
+.map{
+	margin-left: 30%;
+}
+
+

@@ -1,37 +1,28 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		
-		<title>
-			MÖBEL
-		</title>
-		
-		<link rel="icon" href="img/usb.png" type="png" />
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
-		<script type="text/javascript" src="./js/javascript.js"></script>
-		
-	</head>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>möbel</title>
+	<link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/javascript.js"></script>
+</head>
 <body>
 
 	<!-------------------MENU-------------------->
 	<header class="cabecera">
 		<div class="contenedor">
 		<div class="boton">
-			<label for="boton-menu">☰</label>
+			<label for="boton-menu"><img class="logo" src="img/logo.png"></label>
 		</div>
 			<div class="titulo">
-				<h1 href="#">MÖBEL</h1>
+				
 			</div>
 			<nav class="menu">
 				<a href="#galeria">Galeria</a>
-				<a href="#cartas">Historia</a>
-				<a href="#video">Trailer</a>
-				<a href="#formulario">Comprar</a>
 				<a href="#contacto">Contacto</a>
+				<a href="#productos">Productos</a>
+				<a href="#informacion">Informacion</a>
 			</nav>
 		</div>
 	</header>
@@ -40,43 +31,174 @@
 <div class="container-menu">
 	<div class="cont-menu">
 		<nav>
-			<a target="_blank" href="">Suscribirse</a>
-			<a target="_blank" href="">Facebook</a>
-			<a target="_blank" href="">Youtube</a>
-			<a target="_blank" href="">Instagram</a>
+			<a target="_blank" href="https://twitter.com/?lang=es">Twitter</a>
+			<a target="_blank" href="https://www.instagram.com/">Facebook</a>
+			<a target="_blank" href="https://www.youtube.com/">Youtube</a>
+			<a target="_blank" href="https://www.facebook.com/">Instagram</a>
 		</nav>
 		<label for="boton-menu">✖️</label>
 	</div>
 </div>
-<br>
+
+<!-------------------MENU-------------------->
+
+<br><br><br><br><br><br><br><br><br><br>
 
 <!------------------IMAGENES------------------->
 
+<a name="galeria"></a>
+<br>
+	<div class="alineado">
+		<iframe src="img/foto3.jpg" name="iframe" frameborder="0"></iframe>
+	</div>
+		<div class="alineadoimagenes">
+			<div>
+				<a href="img/foto1.jpg" target="iframe"><img class="fotos" src="img/foto1.jpg"></a>
+			</div>
+			<div>
+				<a href="img/foto2.jpg" target="iframe"><img class="fotos" src="img/foto2.jpg"></a>
+			</div>
+			<div>
+				<a href="img/foto3.jpg" target="iframe"><img class="fotos" src="img/foto3.jpg"></a>
+			</div>
+			<div>
+				<a href="img/foto4.jpg" target="iframe"><img class="fotos" src="img/foto4.jpg"></a>
+			</div>
+			<div>
+				<a href="img/foto5.jpg" target="iframe"><img class="fotos" src="img/foto5.jpg"></a>
+			</div>
+		</div>
 
-<div class="row">
-	<div class="column">
-		<img src="img/foto1.jpg">
-		<img src="img/foto2.jpg">
-		<img src="img/foto3.jpg">
-		<img src="img/foto4.jpg">
-		<img src="img/foto5.jpg">
-	</div>
-		<div class="column">
-		<img src="img/foto1.jpg">
-		<img src="img/foto2.jpg">
-		<img src="img/foto3.jpg">
-		<img src="img/foto4.jpg">
-		<img src="img/foto5.jpg">
-	</div>
-		<div class="column">
-		<img src="img/foto1.jpg">
-		<img src="img/foto2.jpg">
-		<img src="img/foto3.jpg">
-		<img src="img/foto4.jpg">
-		<img src="img/foto5.jpg">
-	</div>
+<!------------------IMAGENES------------------->
 
+<br><br><br><br><br><br>
+
+<!------------------FORMULARIO------------------->
+<a name="contacto"></a>
+<div class="contenidoform">
+        <h1 class="logo2">Contacta <span>Nos</span></h1>
+
+        <div class="contact-wrapper animated bounceInUp">
+            <div class="contact-form">
+                <h3>Contactanos</h3>
+                <form action="">
+                    <p>
+                        <label>Nombre</label>
+                        <input type="text" name="name">
+                    </p>
+                    <p>
+                        <label>Apellido</label>
+                        <input type="text" name="apellido">
+                    </p>
+                    <p>
+                        <label>Email</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label>Telefono</label>
+                        <input type="number" name="phone">
+                    </p>
+                    <p class="block">
+                       <label>Mensaje</label> 
+                        <textarea name="message" rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                        <button>
+                            Enviar
+                        </button>
+                    </p>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h4>Mas Información</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Calle San Roque</li>
+                    <li><i class="fas fa-phone"></i> (+34) 687 985 125</li>
+                    <li><i class="fas fa-envelope-open-text"></i> contact@möbel.com</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero provident ipsam necessitatibus repellendus?</p>
+                <p>möbel.com</p>
+            </div>
+        </div>
 </div>
+
+<!------------------FORMULARIO------------------->
+<br><br>
+<!------------------TARJETAS CON IMAGENES------------------->
+<a name="productos"></a>
+<div class="contenedorcard">
+	<div class="card" style="--i:url(../img/foto6.jpg)">
+        <div class="content">
+            <h2>Cómodas</h2>
+        </div>
+    </div>
+
+    <div class="card" style="--i:url(../img/foto7.jpg)">
+        <div class="content">
+            <h2>Librerias</h2>
+        </div>
+    </div>
+
+    <div class="card" style="--i:url(../img/foto8.jpg)">
+        <div class="content">
+            <h2>Estanterias</h2>
+        </div>
+    </div>
+
+    <div class="card" style="--i:url(../img/foto9.jpg)">
+        <div class="content">
+            <h2>Sillas</h2>
+        </div>
+    </div>
+
+    <div class="card" style="--i:url(../img/foto10.jpg)">
+        <div class="content">
+            <h2>Mesas</h2>
+        </div>
+    </div>
+</div>
+
+<!------------------TARJETAS CON IMAGENES------------------->
+<br><br>
+		<!----------------PIE DE PAGINA-------------------->
+		<a name="informacion"></a>
+		<div class=" bg-black skew-left"></div>
+		<div class="section bg-black" id="footer">
+			<div class="center-align">
+				<div class="section-columns" >
+					<div>
+						<br>
+						
+						<h2 class="yellow">Sigamos en Contacto.</h2>
+						<br>
+						<div class="btn-section">
+							<a href="mailto: josegarridofpsmr@gmail.com" class="btn btn-yellow">Mándame un mensaje</a>
+						</div>
+					</div>
+
+					<div>
+						<h3>Contactanos por si tienes alguna duda.</h3>
+						<p>Puedes contactar con nosotros tambien mediante las redes sociales.</p>
+
+						<div class="btn-section">
+							<a href="http://www.facebook.com" class="btn btn-yellow" target="_blank">Facebook</a>
+							<a href="http://www.twitter.com" class="btn btn-yellow" target="_blank">Twitter</a>
+							<a href="http://www.instagram.com" class="btn btn-yellow" target="_blank">Instagram</a>
+						</div>
+					</div>
+				</div>
+			</div>
+				<br>
+				<br>
+				<br>
+			<div class="map">
+
+					<iframe class="mapa"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12173.49803232166!2d-4.014080000657516!3d40.28964279016138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd41955cf07b2c67%3A0xa9d20bcde53486ef!2sMuebles%20G%C3%B3mez!5e0!3m2!1ses!2ses!4v1651490002220!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>	
+			</div>
+		</div>
+	</div>
+	<div id="ultimo"></div>
+
 
 </body>
 </html>
